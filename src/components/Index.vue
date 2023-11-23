@@ -12,7 +12,7 @@ let metrics = reactive({
 				pressure_barometer: 0,
 });
 
-fetch('http://192.168.12.243:8085/items', {
+fetch(`${import.meta.env.VITE_API_HOST}/items`, {
 				method: 'GET',
 })
 				.then(response => response.json())

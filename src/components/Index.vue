@@ -8,9 +8,10 @@ const loading = ref(true)
 const { sensor } = useSensorData()
 
 watch(sensor, () => {
-				setTimeout(() => {
-								loading.value = false
-				}, 500)
+				loading.value = false
+				// setTimeout(() => {
+				// 				loading.value = false
+				// }, 500)
 })
 </script>
 

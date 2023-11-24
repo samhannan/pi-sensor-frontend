@@ -1,7 +1,4 @@
 <script setup>
-defineProps({
-			color: String
-})
 </script>
 
 <template>
